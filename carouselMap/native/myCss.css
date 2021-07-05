@@ -1,0 +1,13 @@
+*{margin: 0;padding: 0;}
+#loopDiv{position: relative;height: 400px;width: 600px; margin: 100px auto 0 auto;box-shadow: 0 0 5px green;overflow: hidden;}
+#pic{position: absolute;height: 400px;width: 4200px;z-index: 1;}
+img{float: left;}
+#btm{position: absolute;z-index: 2;right: 25px;bottom: 10px;}
+#btm span{display: inline-block;color: aliceblue;background-color: rgb(87, 173, 248);margin-left: 5px;width: 20px;
+    height: 20px;border-radius: 50%;text-align: center;cursor: pointer;}
+#loopDiv #btm span.on{background-color: red;}
+.arrow{position: absolute;z-index: 2;text-decoration: none;top: 40%;color: rgb(87, 173, 248);padding: 0px 14px;font-size: 50px;
+    display: block;border-radius: 50%;text-align: center;}
+#a-left{left: 10px;}
+#a-right{right: 10px;}
+.arrow:hover{background-color:gainsboro;}

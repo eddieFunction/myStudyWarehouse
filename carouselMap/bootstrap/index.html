@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div id="myCarousel" class="carousel slide">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+            <li data-target="#myCarousel" data-slide-to="5"></li>
+            <li data-target="#myCarousel" data-slide-to="6"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="./img/1.jpg" alt="First slide" class="img-responsive center-block">
+                <div class="carousel-caption">鸣人</div>
+            </div>
+            <div class="item">
+                <img src="./img/2.jpg" alt="Second slide" class="img-responsive center-block">
+                <div class="carousel-caption">喵！</div>
+            </div>
+            <div class="item">
+                <img src="./img/3.jpg" alt="Third slide" class="img-responsive center-block">
+                <div class="carousel-caption">宇航员</div>
+            </div>
+            <div class="item">
+                <img src="./img/4.jpg" alt="Forth slide" class="img-responsive center-block">
+                <div class="carousel-caption">猫猫狗狗</div>
+            </div>
+            <div class="item">
+                <img src="./img/5.jpg" alt="Fifth slide" class="img-responsive center-block">
+                <div class="carousel-caption">可爱的小猫</div>
+            </div>
+            <div class="item">
+                <img src="./img/6.jpg" alt="Sixth slide" class="img-responsive center-block">
+                <div class="carousel-caption">海绵宝宝</div>
+            </div>
+            <div class="item">
+                <img src="./img/7.jpg" alt="Seventh slide" class="img-responsive center-block">
+                <div class="carousel-caption">路飞在和之国</div>
+            </div>
+        </div>
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</body>
+<script>
+    $(function(){
+        $('#myCarousel').carousel('cycle');
+    })
+</script>
+</html>
