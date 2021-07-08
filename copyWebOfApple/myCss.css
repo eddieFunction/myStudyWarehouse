@@ -1,0 +1,24 @@
+#nav{text-align: center;background-color: black;}
+.navbar-header{background-color: black;}
+#navul{display: inline-block;float: none;}
+ul li{margin: 5px 0px 0px 20px;list-style: none;}
+.navbar-brand{color: gray;font-family: sans-serif;}
+.icon-bar{background-color: white;}
+.nava{color: white;font-family: sans-serif;}
+.nava:hover{text-shadow: 2px 2px 2px white;color: white; background-color: transparent !important;}
+.snava:link{background-color: transparent !important;}
+.text{padding: 0px;margin: 0px;}
+.infoShow{list-style: none;text-align: center;padding: 0px;margin: 0px;}
+h4{font: 26px bold;font-family: sans-serif;}
+.price{color: gray;font: 16px bold;font-family: sans-serif;}
+.info-link{color: blue;font: 16px bold;}
+.info-link:hover{color: blue;}
+#first{background-color: #fbfbfd;margin: 50px  0px 0px 0px;padding: 5px;}
+#second{background-color: black;margin: 15px  0px 0px 0px;padding: 15px;color: white;}
+#third{background-color: black;margin: 15px  0px 0px 0px;padding: 15px;color: white;}
+.mid{background-color: #fbfbfd;padding: 15px;margin: 10px 0px 0px 0px;}
+
+#footer{margin: 10px 0px;text-align: center;background-color: #f5f5f7;}
+#ps{text-align: center;font: 7px bold;font-family: sans-serif;color: gray;margin: 10px 0px;}
+.col-md-2 ul li a{color: black;}
+.col-md-3 ul li a{color: black;}

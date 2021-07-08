@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>仿写Apple官网</title>
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./myCss.css">
+</head>
+<body>    	      
+    <nav class="navbar navbar-fixed-top" role="navigation">
+        <div class="container-fluid"></div>
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand nava">Apple</a>
+        </div>
+        <div class="collapse navbar-collapse" id="nav">
+            <ul class="nav navbar-nav" id="navul">
+                <li class="active"><a href="" class="nava">Mac</a></li>
+                <li><a href="" class="nava">iPad</a></li>
+                <li><a href="" class="nava">iPhone</a></li>
+                <li><a href="" class="nava">Watch</a></li>
+                <li><a href="" class="nava">Music</a></li>
+                <li class="dropdown">
+                    <a href="" class="dropdown-toggle nava" data-toggle="dropdown">技术支持<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">天才吧</a></li>
+                        <li><a href="#">Apple Trade In</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">购买Apple Care+</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="apple1"> 
+        <ul class="text">
+            <li v-for="item in txt" :key="item.name" class="infoShow">
+                <div :id="item.id">
+                    <h1><strong>{{ item.name }}</strong></h1>
+                    <h4>{{ item.desc }}</h4>
+                    <p class="price">{{ item.price }}</p>
+                    <p class="price">{{ item.change }}</p>
+                    <a href="" class="info-link">{{ item.know }}</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="" class="info-link">{{ item.buy }}</a>
+                </div>
+                <img :src="item.pic" alt="" class="img-responsive">
+            </li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6" id="apple2">
+                <ul class="text">
+                    <li v-for="item in txt" :key="item.name" class="infoShow mid">
+                        <div :id="item.id">
+                            <h1><strong>{{ item.name }}</strong></h1>
+                            <h4>{{ item.desc }}</h4>
+                            <p class="price">{{ item.price }}</p>
+                            <p class="price">{{ item.change }}</p>
+                            <a href="" class="info-link">{{ item.know }}</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="" class="info-link">{{ item.buy }}</a>
+                        </div>
+                        <img :src="item.pic" alt="" class="img-responsive">
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-6" id="apple3">
+                <ul class="text">
+                    <li v-for="item in txt" :id="item.id" class="infoShow mid">
+                        <div :id="item.id">
+                            <h1><strong>{{ item.name }}</strong></h1>
+                            <h4>{{ item.desc }}</h4>
+                            <p class="price">{{ item.price }}</p>
+                            <p class="price">{{ item.change }}</p>
+                            <a href="" class="info-link">{{ item.know }}</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="" class="info-link">{{ item.buy }}</a>
+                        </div>
+                        <img :src="item.pic" alt="" class="img-responsive">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p id="ps">上述所示分期付款金额仅为使用特定期数免息分期付款估算得出的示例（仅显示整数数额，未显示小数点以后的金额)，
+                            实际支付金额以银行或花呗账单为准。最高可享 24 期免息分期，到 Apple Store 零售店和在线商店购买时可享受
+                            的免息分期期数和最低限额可能有所不同，银行和花呗提供的免息分期期数和最低限额可能有所不同。实际折抵金额
+                            取决于设备的状况、配置、制造年份，以及发售国家或地区。银行或花呗可能要求你的可用信用额度大于所购买产品
+                            的总金额，才能使用分期付款服务。有关信用卡或花呗分期服务的申请及使用问题，请与银行或花呗联系，Apple 对
+                            此不做任何承诺和保证。Apple 的折抵换购服务为 Apple 与 Apple 折抵服务合作伙伴共同推出，年满 18 周岁及
+                            以上者才能享受此项折抵换购服务。店内折抵换购需出示政府颁发并附有照片的有效身份证件 (当地法律可能会要求
+                            存储该信息)。可能需要遵守 Apple 或 Apple 折抵服务合作伙伴的其他条款。本折抵换购服务不能与 Apple 的其
+                            他优惠或折扣活动同时使用。如需了解更多免息分期付款信息，请点击此处。</p>    
+                </div>
+                <hr>
+                <div class="col-md-2">
+                    <ul>
+                        <li><a href=""><strong>选购及了解</strong></a></li>
+                        <li><a href="">Mac</a></li>
+                        <li><a href="">iPad</a></li>
+                        <li><a href="">iPhone</a></li>
+                        <li><a href="">Watch</a></li>
+                        <li><a href="">Music</a></li>
+                        <li><a href="">AirPods</a></li>
+                        <li><a href="">HomePod mini</a></li>
+                        <li><a href="">iPod touch</a></li>
+                        <li><a href="">AirTag</a></li>
+                        <li><a href="">配件</a></li>
+                        <li><a href="">App Store 充值卡</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <ul>
+                        <li><a href=""><strong>服务</strong></a></li>
+                        <li><a href="">Apple Music</a></li>
+                        <li><a href="">iCloud</a></li>
+                        <li><a href="">Apple Pay</a></li>
+                        <li><a href="">Apple 播客</a></li>
+                        <li><a href="">App Store</a></li>
+                        <li><a href=""><br></a></li>
+                        <li><a href=""><strong>账户</strong></a></li>
+                        <li><a href="">管理你的 Apple ID</a></li>
+                        <li><a href="">Apple Store 账户</a></li>
+                        <li><a href="">iCloud.com</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                        <ul>
+                        <li><a href=""><strong>Apple Store商店</strong></a></li>
+                        <li><a href="">查找零售店</a></li>
+                        <li><a href="">在线选购</a></li>
+                        <li><a href="">Genius Bar 天才吧</a></li>
+                        <li><a href="">Today at Apple</a></li>
+                        <li><a href="">Apple 夏令营</a></li>
+                        <li><a href="">Apple Store App</a></li>
+                        <li><a href="">翻新和优惠</a></li>
+                        <li><a href="">分期付款</a></li>
+                        <li><a href="">Apple Trade In 换购计划</a></li>
+                        <li><a href="">订单状态</a></li>
+                        <li><a href="">选购帮助</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <ul>
+                        <li><a href=""><strong>商务应用</strong></a></li>
+                        <li><a href="">Apple 与商务</a></li>
+                        <li><a href="">商务选购</a></li>
+                        <li><a href=""><br></a></li>
+                        <li><a href=""><strong>教育应用</strong></a></li>
+                        <li><a href="">Apple与教育</a></li>
+                        <li><a href="">高校师生选购</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul>
+                        <li><a href=""><strong>Apple 价值观</strong></a></li>
+                        <li><a href="">辅助功能</a></li>
+                        <li><a href="">环境责任</a></li>
+                        <li><a href="">隐私</a></li>
+                        <li><a href="">供应商责任</a></li>
+                        <li><a href=""><br></a></li>
+                        <li><a href=""><strong>关于 Apple</strong></a></li>
+                        <li><a href="">Newsroom</a></li>
+                        <li><a href="">Apple 管理层</a></li>
+                        <li><a href="">工作机会</a></li>
+                        <li><a href="">创造就业</a></li>
+                        <li><a href="">商业道德与合规性</a></li>
+                        <li><a href="">活动</a></li>
+                        <li><a href="">联系 Apple</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/vue@next"></script>
+<script src="./myJs.js"></script>
+</html>
