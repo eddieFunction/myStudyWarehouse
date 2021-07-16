@@ -1,0 +1,9 @@
+#gamearea{text-align: center;}
+#head{margin: auto;}
+#video{float: right;}
+.pk{display: inline-block;margin-top: 5px;}
+
+#resultPic{display: none;}
+#sc{border: 2px solid blue;width: 500px;height: 224px;text-align: center;}
+#tishi{color: red;}
+#sc-ul li{list-style: none;font: 20px bold;}

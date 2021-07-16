@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/myCss.css">
+    <title>和电脑玩石头剪刀布</title>
+</head>
+
+<body>
+    {% raw %}
+    <div id="gamearea" class="container">
+        <div id="head">
+            <h2>{{ name }}</h2>
+            <span>按下enter键开始游戏，空格键重新开始</span>
+        </div>
+        <hr>
+        <div class="row">    
+            <div style="text-align: center;display: inline;" class="col-lg-4">
+                <video src="" id="video" class="pk"></video>
+            </div>
+            <div style="display: inline;" class="col-lg-4" id="vs">
+                <img src="../static/origin_pics/VS.jpg" alt="" class="pk" width="224" height="224">    
+            </div>
+            <div style="display: inline;" class="col-lg-4">
+                <img :src="src" alt="" id="pic" class="pk" width="224" height="224" style="float: left;">
+            </div>     
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-lg-3 below">
+                <canvas id='canvas' width="224" height="224" class="pk"></canvas>
+            </div>
+            <div class="col-lg-3 below">
+                <img :src="resultPic" alt="" id="resultPic" width="224" height="224">
+            </div>
+            <div id="sc" class="col-lg-6 below">
+                <p id="tishi">{{ tishi }}</p>
+                <ul id="sc-ul">
+                    <li><strong>结果</strong></li>
+                    <li id="first">Round one:&nbsp;&nbsp;&nbsp;&nbsp;{{ first }}</li>
+                    <li id="second">Round two:&nbsp;&nbsp;&nbsp;&nbsp;{{ second }}</li>
+                    <li id="third">Round three:&nbsp;&nbsp;&nbsp;&nbsp;{{ third }}</li>
+                    <li id="forth">Round four:&nbsp;&nbsp;&nbsp;&nbsp;{{ forth }}</li>
+                    <li id="fifth">Round five:&nbsp;&nbsp;&nbsp;&nbsp;{{ fifth }}</li>
+                    <li id="result">{{ result }}</li>
+                </ul>    
+            </div>
+        </div>
+    </div>
+    {% endraw %}
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../static/js/myVue.js"></script>
+</body>
+
+</html>
