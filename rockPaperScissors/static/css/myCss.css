@@ -1,5 +1,8 @@
 #gamearea{text-align: center;}
 #head{margin: auto;}
+#vid{text-align: center;}
+#pic{float: left;}
+.mid{display: inline;}
 #video{float: right;}
 .pk{display: inline-block;margin-top: 5px;}
 
