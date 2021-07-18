@@ -1,0 +1,28 @@
+#memo{background: white;position: relative;z-index: 0;}
+#warning{background-color: orange;position: absolute;z-index: 1;left: 50%;transform: translateX(-50%);
+        width: 100px;border-radius: 5px;text-align: center;display: none;}
+.pb{margin-left: 15px;margin-top: 0px;}
+.header{float: left;}
+#cur{float: right;font: 15px solid;color: rgb(170, 161, 161);}
+        
+#write{display: inline;}
+
+#txt{resize: none;width: 95%;margin-top: 5px;margin-left: 15px;}
+#div-sel{display: flex;align-items: center;justify-content: space-around;}
+#sel{background-color:coral;line-height: 28px;height: 28px;;width: 100px;
+    border:1px solid #9bc0dd;border-radius: 5px;color: white;margin-right: 25px;}
+#sortByProity{height: 28px;width: 100px;margin-right: 25px;text-align: center;}
+#submit{height: 28px;width: 100px;}
+
+hr{margin: 15px;margin-bottom: 0px;}
+
+#below{overflow: auto;height: 400px;margin-bottom: 15px;margin-top: 5px;}
+#below ul{margin: 15px;padding: 0px;}
+.todo{list-style: none;clear: both;margin-top: 0px;margin-bottom: 15px;}
+#con{font: 20px solid sans-serif;margin-bottom: 15px;float: left;}
+#pro{float: right;color: blueviolet;}
+#twoBtn{margin-bottom: 50px;clear: both;}
+#del{float: right;}
+#updateInfo{float: left;}
+    
+#footer{text-align: center;color: coral;}

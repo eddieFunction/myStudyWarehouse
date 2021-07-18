@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList of Eddie</title>
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./myCss.css">
+    
+</head>
+<body>
+    <div class="col-lg-4"></div>
+    <div class="container">
+        <div class="row">
+            <div id="memo" class="col-lg-4">
+                <div id="up">
+                    <div id="warning">{{ tishi }}</div>
+                    <div class="pb page-header">
+                        <h2 id="header" class="text-left">备忘录
+                            <small id="cur" class="text-right">{{ current }}</small>
+                        </h2> 
+                    </div>
+
+                    <div id="write">
+                        <div>
+                            <form role="form">
+                                <div class="form-group">
+                                    <textarea name="" id="txt" v-model="content" 
+                                    placeholder="输入内容不得超过20个字，之后请选择优先级(1~5)，默认为1(最不紧急)"
+                                    maxlength="18" minlength="1" @keydown.enter="submit" class="form-control" rows="3"></textarea>
+                                </div>   
+                            </form>                
+                        </div>
+                        <div id="div-sel" class="pb">
+                            <select name="" id="sel" v-model="proity">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                            <button id="sortByProity" class="btn btn-primary" @click="sortByProity">排序</button>
+                            <button id="submit" @click="submit" class="btn btn-success">我写好了</button>     
+                        </div>    
+                    </div>
+                    <hr>
+                </div>
+                
+                <div id="below">
+                    <ul>
+                        <li v-for="(txt, i) in txts" :key=txt.p class="todo">
+                            <div>
+                                <div id="words">
+                                    <p id="con">{{ txt.p }}</p>
+                                    <p id="pro">{{ txt.proity }}</p>
+                                </div>
+                                <div id="twoBtn">
+                                    <button id="del" class="btn btn-danger" @click="del(i)">删除</button>    
+                                    <button id="updateInfo" class="btn btn-warning" @click="updateInfo(i)">更新</button>    
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="footer">
+                    <p>copyright @cbx</p>
+                </div>
+
+            </div>  
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="myJs.js"></script>
+</body>
+</html>
